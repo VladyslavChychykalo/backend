@@ -1,0 +1,43 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "eslint ./src/**/*.ts",
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "eslint './src/**/*.ts' --fix",
+    "build": "tsc",
+    "linter-init": "eslint --init",
+    "serve": "tsnd --respawn --no-notify --clear --transpile-only src/app.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@types/body-parser": "^1.19.0",
+    "@types/pg": "^7.14.7",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "shortid": "^2.2.16",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.9",
+    "@types/hapi__joi": "^17.1.6",
+    "@types/node": "^14.14.14",
+    "@types/shortid": "0.0.29",
+    "@types/uuid": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
+  }
+}
